@@ -320,4 +320,49 @@ P.S 각도를 설정하는 단위
                    이러한 디자인을 카드형 레이아웃이라고 부른다.
                    ==> OverFlow.html과 같은 형식의 디자인이 강력한 편
 
+9. floating : 블록요소 주위에는 다른 요소가 올 수 없으나,
+              블록요소 주위에 다른 요소를 배치하고자 할 때는 블록 요소를 inline 요소로 변경하거나 float속성을 이용해 영역은 차지하되
+              공중에 떠 있는 형태로 만들어서 할 수 있다.
+              left, right, none을 설정할 수 있다.
+             
+              또한 inline요소에도 float속성을 적용할 수 있는데 그렇게 되면 width와 height를 설정하는 것이 좋은데 설정하지 않으면
+              콘텐츠를 표시하는 영역이 최대한 확장이 되어버린다.
+
+              float 속성이 적용된 상태에서 해제하는 방법
+              clear 속성에 none, left, right, both를 설정해서 해제 -> 블록요소에서만 가능
+              overflow 속성에 auto나 hidden을 설정해서 해제 -> 부모요소에 설정_float 속성을 부모 요소에 설정해서 해제하는것 
+
+10. 크기 조절 : resize 속성에 horizontal이나 vertical, both를 설정해서 크기 조절이 가능하도록 할 수 있음
+
+11. 그림자 설정 : box-shadow 수평오프셋, 수직오프셋 흐릿함과 확산정도 색상으로 설정
+                 수평 오프셋 앞에 inset을 설정하면 그림자가 내용 안으로 출력된다.
+             
+12. 경계선 설정
+- border-style : 경계선의 모양으로 none, dotted, dashed, solid, double, groove, ridge, inset, outset을 설정
+                 그냥 사용하면 상하좌우 경계선이 모두 동일한 모양이 되고 방향 별로 다르게 설정하고자 한다면 
+                 border-left-style, border-right-style, border-top-style, border-bottom-style로 설정
+
+- border-width : 경계선의 두께로 thin, medium, thick 으로 설정할 수 있고 값과 단위를 직접 지정할 수 있으며, 마찬가지로 방향별 지정가능
+
+- border-color : 경계선의 색상
+
+- border : 두께, 종류, 색상을 한꺼번에 설정
+
+- border-radius : 경계선에 라운드 효과를 설정하는 속성으로
+                  Css3에서 추가된 속성이다,
+                  값을 하나만 설정해서 상하좌우 모두 동일한 값으로 적용가능하고 숫자 4개를 설정해 상하좌우를 다르게 설정하는 것도 가능하며
+                  ,로 구분하고 다시 설정해 여러개의 값을 지정할 수 있다.
+
+- image-border : border에 이미지를 설정할 수 있다
+                 border-image-source:url(이미지경로) 로 설정.
+                 border-image-slice: 값 4개 와 같은 형식으로 잘라내기 설정
+                 border-image-repeat: stach, repeat, round, space중 하나의 값을 설정해 반복여부 지정
+                 border-image-width: 숫자 와 같은 형식으로 두께 설정
+                 border-image-outset: 숫자 와 같은 형식으로 경계선과의 거리를 조정
+
+- display : 박스의 보기 모드를 변경
+            block : 블록요소로 만들어짐
+            inline : 인라인요소로 만들어지는데 height가 무시된다.
+            inline-block : 인라인 요소로 만드는데 주위에 컨텐츠가 배치되지 않고 height가 적용된다.
+                 
 

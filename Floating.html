@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            floating연습
+        </title>
+        <style>
+            #div1{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+            #Fdiv1{ 
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                float: left; /* Fdiv의 id값을 가진 div태그들은 블록 요소임에도 float left를 기준으로 정렬된다. */
+            }
+            #Fdiv2{ 
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                float: right; /* Fdiv의 id값을 가진 div태그들은 블록 요소임에도 float right를 기준으로 정렬된다. */
+                resize: both;
+            }
+        </style>
+    </head>
+    <!---->
+    <body>
+        <div id="div1">블록1</div>
+        <div id="div1">블록2</div>
+        <div id="div1">블록3</div>
+        <br/><br/>
+
+        <div id="Fdiv1">블록1</div>
+        <div id="Fdiv1">블록2</div>
+        <div id="Fdiv1">블록3</div>
+        <br/><br/>
+
+        <div id="Fdiv2">블록1</div>
+        <div id="Fdiv2">블록2</div>
+        <div id="Fdiv2">블록3</div>
+    </body>
+
+</html>

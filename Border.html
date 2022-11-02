@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            border연습
+        </title>
+        <style>
+            #div1{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                border : 1px solid red;
+            }
+
+            /* 아래와 같이 한 태그에 두 Css를 주어 시각효과를 만들 수 있음 */
+            #div2{
+                width: 100px;
+                height: 100px;
+                border-width: 3px;
+                border-style: solid;
+                border-left-color: salmon;
+                border-top-color: salmon;
+                border-right-color: teal;
+                border-bottom-color: teal;
+            }
+            #div2:hover{
+                width: 100px;
+                height: 100px;
+                border-width: 3px;
+                border-style: solid;
+                border-left-color: teal;
+                border-top-color: teal;
+                border-right-color: salmon;
+                border-bottom-color: salmon;
+            }
+            #div3{
+                width: 100px;
+                height: 100px;
+                border-width: 3px;
+                border-style: solid;
+                border-left-color: red;
+                border-top-color: red;
+                border-right-color: blue;
+                border-bottom-color: blue;
+            }
+            #div3:active{ /* active는 클릭했을 때 만응하는 것 */
+                width: 100px;
+                height: 100px;
+                border-width: 3px;
+                border-style: solid;
+                border-left-color: blue;
+                border-top-color: blue;
+                border-right-color: red;
+                border-bottom-color: red;
+
+            }
+
+            #a1{ /* 인라인 요소인 a태그에 id값 부여해 블록요소로 */
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">버튼1</div>
+        <div id="div2">버튼2</div>
+        <div id="div3">버튼3</div>
+        
+        <br/><br/>
+        <!--원래는 인라인요소로 출력되나-->
+        <a href="https://data.go.kr">공공 데이터 포털</a>
+        <a href="https://developer.kakao.com">카카오 개발자 포털</a>
+
+        <br/><br/>
+        <!--a1이 id값을 가진 똑같은 a태그의 아래는 블록요소로 인식되어 하나씩 출력됨-->
+        <a id="a1" href="https://data.go.kr">공공 데이터 포털</a>
+        <a id="a1" href="https://developer.kakao.com">카카오 개발자 포털</a>
+    </body>
+
+</html>
