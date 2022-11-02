@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            복합 선택자
+        </title>
+    </head>
+    <!--<em>은 기울여 쓴 글자가 출력-->
+    <body>
+        <h1>안녕하세요<em>아담입니다.</em></h1>
+        <p>한 번 TV에 나와 노래를 하면<em>천만원 적자입니다.</em></p>
+
+        <h1>안녕하세요<em>이브입니다.</em></h1>
+        <p>한 번 TV에 나와 노래를 하면<em id="test">이천만원 적자입니다.</em></p>
+
+        <h1>안녕하세요<em>이브입니다.</em></h1>
+        <p>한 번 TV에 나와 노래를 하면<em id="test">이천만원 적자입니다.</em></p>
+    </body>
+    <style>
+        /* p em{}과 #test는 결국 같은 역할로 동작 */
+        p em{ /* p태그 뒤에 나오는 em태그들에만 적용 */
+            color: red;
+        }
+        #test{
+            color: palevioletred;
+        }
+
+        /* 의사 선택자 hovor */
+        h1:hover{
+            color: honeydew;
+        }
+
+    </style>
+</html>
