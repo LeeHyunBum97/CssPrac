@@ -263,3 +263,61 @@ P.S 각도를 설정하는 단위
                      border-box : 테두리까지 적용
                      padding-box : 테두리 제외하고 적용
                      content-box : content에만 적용
+
+8. background : color, image, 반복여부, position, attachment를 한꺼번에 적용하기 위한 속성이다.
+
+<gradation> : Css3부터 지원하는 것으로 여러 색상을 혼합해서 사용하는 속성
+1. vedor-prefix : Css3의 기능 중에는 표준으로 채택되지 않아서 브라우저 별로 별도로 기능을 제공할 때 사용하는 기호
+                  사파리/크롬은 -webkit-을 추가
+                  파이어폭스는 -moz-를 추가
+                  MS 브라우저는  -ms-를 추가
+                  오페라 브라우저는 -o-를 추가
+                  -> Css3 는 현재에도 표준을 계속 추가하고 있기 때문에 vendor prefix를 이용하는 기능 중에는 최신 브라우저를 사용하면
+                     vendor-prefix를 생략해도 되는 경우가 있음 Css나 스크립트 계열은 브라우저들이 쓰는 거에 따라서 표준을 채택하기 때문
+
+2. linear-gradation : 선형 그라데이션으로 
+                      linear-gradation(각도, 색상값을 나열)
+
+3. radial-gradation : 원형 그라데이션으로
+                      radial-gradation(시작점의 위치, circle의 모양, 색상나열)
+
+==> 그라데이션을 직접 생성하는 것은 쉽지않아 http://www.colorzilla.com/gradient-editor/ 에서 모양을 만든 후 코드를 복사해 사용하는 것이 편리함
+
+<Box Model_영역에 대한 설정>
+- width : 콘텐츠 영역의 넓이
+- height : 콘텐츠 영역의 높이
+- border : 경계선
+- margin : 경계선과 콘텐츠 사이 여백
+- padding : 영역과 영역 사이의 여백
+
+1. IE의 호환 모드 :  IE의 하위 버전들은 padding을 width, height에 포함시켜서 계산
+                    width : 100px
+                    height : 100px
+                    padding : 30px
+                    일반 브라우저들은 160px를 확보해서 표시되지만 IE하위버전은 100px 만을 확보해서 표시되지만
+
+2. margin collapsing (마진겹침) : 연속배치된 요소들에 마진을 전부 설정하면 마진은 중복 적용되지 않고 큰 값 1개만을 적용한다
+
+3.box-sizing : box의 크기를 설정할 때 기준을 정하는 것으로 content-box를 설정하면 내용을 기준으로 box크기를 설정하고 border-box를 설정하면 
+               경계선을 기준으로 한다.
+
+4. 크기 설정 : width, height을 가지고 설정하며,
+              추가적으로 max-height, min-height, max-width, min-width을 이용해 최대 및 최소 크기를 설정하는 것이 가능하다.
+
+5. 여백 설정 : padding과 margin으로 설정하며,
+              padding이나 margin에 하나의 숫자를 설정하면 좌우상하에 동일하게 적용된다,
+              상하좌우를 따로 설정하고자 하면 -left, -right, -top, -bottom을 이용해서 설정
+
+6. visibility : 요소의 내용을 숨기거나 표시하고자 할 때 사용하는 속성
+                visible, hidden, collapse로 설정
+
+7. overflow : 내용이 영역보다 큰 경우의 옵션 설정으로,
+              visible, hidden, scroll로, auto가 있음
+
+8. text-overflow : 텍스트가 영역보다 긴 경우의 옵션으로 clip(내용을 잘라서 보이지 않음), ellipse(...을 표시)를 설정할 수 있음
+                   최근에는 텍스트가 영역보다 큰 경우 더보기 버튼 같은 거들을 만들어서 출력하는 경우가 많다.
+                   페이스북 앱은 내용이 많은 경우 ...과 더보기 기능을 제공해서 더보기를 누르면 아래로 펼쳐지는 형태로 디자인을 하는데
+                   이러한 디자인을 카드형 레이아웃이라고 부른다.
+
+
+
