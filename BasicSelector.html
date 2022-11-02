@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            CSS 기본 선택자 연습
+        </title>
+    </head>
+
+    <!--참고로 하나의 태그는 여러 클래스에 그룹화 될 수 있다, 즉 class속성에 중복된 값을 넣을 수 있다.-->
+    <body>
+        <h1>제목 태그</h1>
+        <p class="paragraph">문단 태그</p>
+        <p class="paragraph">문단 태그</p>
+        <p>문단 태그</p>
+        <p id="identifier">문단 태그</p>
+        
+        <!--스크립트 문서 내부에 따로 영역을 만들어 CSS를 적용하는 예시-->
+        <style>
+            h1{
+                color: orange;
+            }
+            .paragraph {
+                color: greenyellow;
+            }
+            #identifier {
+                color: blanchedalmond;
+            }
+        </style>
+    </body>
+
+</html>
